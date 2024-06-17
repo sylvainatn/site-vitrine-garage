@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-pills {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    display: flex;
+    list-style: none;
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: ;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.logo {
+    width: 30%;
+}
+
+@media (max-width: 1000px) {
+
+    .nav-pills {
+        display: none;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .burger-menu {
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 6;
+    }
+}
+
+
+
+/* 
+Logo responsive 
+*/
+
+@media (max-width: 630px) {
+
+    .logo {
+        width: 40%;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .logo {
+        width: 50%;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .logo {
+        width: 55%;
+    }
+}
+
+
+.bar {
+    width: 70%;
+    height: 3px;
+    background-color: rgb(205, 34, 34);
+    transition: transform 0.2s ease;
+}
+
+
+
+/*
+Horloge
+*/
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 10vw;
+    width: 10vw;
+    background: url(../../include/clock.png) no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
+
+
+/*
+Caroussel
+*/
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+
+
+/* 
+Footer 
+*/
+
+.footer-0,
+.footer-1,
+.footer-2,
+.footer-3,
+.footer-4,
+.footer-5 {
+    margin-bottom: 2%;
+}
+
+/* Accueil */
+.footer-0 {
+    padding-top: 3ch;
+}
+
+/* Prestation */
+.footer-1 {
+    padding-top: 10ch;
+}
+
+/* Voiture */
+.footer-2 {
+    padding-top: 53ch;
+}
+
+/* Plan */
+.footer-3 {
+    padding-top: 2ch;
+}
+
+/* Contact */
+.footer-4 {
+    padding-top: 40ch;
+}
+
+/* Mentions Légales */
+.footer-5 {
+    padding-top: 13ch;
+}
+
+
+
+/* 
+Légales 
+*/
+
+.cadre {
+    padding: 10px;
+    border: 3px solid rgb(251, 89, 89);
+    border-radius: 30px;
+}
+
+
+
+/*
+Tableau avec les horaires
+*/
+
+.horaires {
+    padding: 0%;
+    margin: 2% 37%;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tbody tr td {
+    font-size: 14px;
+    padding: 3px;
+    text-align: center;
+    border: 0.5px solid rgb(121, 121, 121);
+}
+
+.plan-maps {
+    margin-top: 50px;
+    padding: 0 28%;
+    width: 100%;
+}
+
+@media (max-width: 1060px) {
+
+    .horaires {
+        margin: 2% 30%;
+    }
+}
+
+@media (max-width: 1170px) {
+
+    .horaires {
+        margin: 2% 30%;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .horaires {
+        margin: 4% 25%;
+    }
+
+    .plan-maps {
+        padding: 0% 8%;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .horaires {
+        margin: 6% 20%;
+    }
+
+    .plan-maps {
+        padding: 0% 8%;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .horaires {
+        margin: 8% 15%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .horaires {
+        margin: 10% 10%;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .horaires {
+        margin: 12% 5%;
+    }
+
+    .plan-maps {
+        padding: 0% 5%;
+    }
+}
+
+@media (max-width: 355px) {
+
+    .horaires {
+        margin: 14% 0%;
+    }
+}
+
+
+
+/* 
+Prestations
+*/
+
+.tarif-horraires {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+@media (max-width: 1480px) {
+
+    .tarif-horraires {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+}
+
+@media (max-width: 1380px) {
+
+    .tarif-horraires {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 1290px) {
+
+    .tarif-horraires {
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .tarif-horraires {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+}
+
+@media (max-width: 1130px) {
+
+    .tarif-horraires {
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+}
+
+@media (max-width: 1070px) {
+
+    .tarif-horraires {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+@media (max-width: 1015px) {
+
+    .tarif-horraires {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 970px) {
+
+    .tarif-horraires {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .tarif-horraires {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .tarif-horraires {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .tarif-horraires {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .tarif-horraires {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+.nav-pills-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25%;
+    font-size: 1.1rem;
+}
+
+
+
+/*
+Chargement
+*/
+
+#loader-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#voiture {
+    width: 10vw;
+    transform: translateX(-10vw);
+    animation: avancer 4s alternate infinite;
+}
+
+hr {
+    width: 40vw;
+    background-color: #1B1464;
+    height: 2px;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+@keyframes avancer {
+    from {
+        transform: translateX(-10vw);
+    }
+
+    to {
+        transform: translateX(10vw);
+    }
+}
