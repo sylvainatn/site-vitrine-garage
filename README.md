@@ -42,7 +42,7 @@ Il inclut également une section d'administration permettant de gérer dynamique
 ### **Étapes**
 1. Clonez le projet :
    ```bash
-   git clone https://github.com/votre-repo/site-vitrine-chronomeca.git
+   git clone https://github.com/sylvainatn/site-vitrine-chronomeca.git
    ```
 2. Placez le dossier dans votre répertoire de serveur local :
    ```bash
@@ -53,8 +53,8 @@ Il inclut également une section d'administration permettant de gérer dynamique
    - Importez le fichier SQL situé dans `/model/chronomeca.sql`.
 
 4. Lancez le serveur et accédez au projet dans le navigateur :
-   - **Frontend** : [http://localhost/chronomeca/controller](http://localhost/chronomeca/controller)
-   - **Backend** : [http://localhost/chronomeca/back](http://localhost/chronomeca/back)
+   - **Frontend** : [http://localhost/site-vitrine/controller](http://localhost/chronomeca/controller)
+   - **Backend** : [http://localhost/site-vitrine/back](http://localhost/chronomeca/back)
 
 ---
 
@@ -71,17 +71,5 @@ Le projet suit l'architecture **MVC** avec une séparation claire entre les diff
 
 ```
 
----
 
-## **Accès au site**
-
-- **Frontend (Site vitrine)** :
-  - URL : [http://localhost/chronomeca/controller](http://localhost/chronomeca/controller)
-  - Ce répertoire permet d'accéder aux pages principales visibles par les utilisateurs.
-
-- **Backend (Administration)** :
-  - URL : [http://localhost/chronomeca/back](http://localhost/chronomeca/back)
-  - Ce répertoire est dédié à l'administration et nécessite une connexion avec des identifiants valides.
-
----
 
