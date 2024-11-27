@@ -1,2 +1,0 @@
-Pour accéder au site, aller dans le répertoire : /controller
-Pour accéder à l'administration du site, aller dans le répertoire : /back
