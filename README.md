@@ -8,7 +8,6 @@ Ce projet est un site vitrine développé pour le garage **Chronomeca**. Il util
 2. [Fonctionnalités](#fonctionnalités)
 3. [Installation](#installation)
 4. [Architecture du projet](#architecture-du-projet)
-5. [Accès au site](#accès-au-site)
 
 ---
 
